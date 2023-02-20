@@ -1,16 +1,20 @@
+:root {
+  --light-yellow: #f4f1de;
+  --dark-grey:#393d3f;
+  --red-panda: #c83e19;
+}
+
 body {
   max-width: 1920px;
   margin: 80px auto 0 auto;
-  background-color: #f4f1de;
+  background-color: var(--light-yellow);
 }
 
 .navok {
   display: flex;
   align-content: center;
   justify-content: center;
-  background-color: #393d3f;
-  /*   border-radius: 15px 15px 0 0;
- */
+  background-color: var(--dark-grey);
   padding: 0 20%;
 }
 
@@ -31,7 +35,7 @@ body {
   display: flex;
   margin: auto 0;
   padding: 0;
-  color: #f4f1de;
+  color: var(--light-yellow);
   list-style: none;
   flex-direction: row;
   gap: 30px;
@@ -40,13 +44,13 @@ body {
 }
 
 #navs ul li a {
-  color: #f4f1de;
+  color: var(--light-yellow);
   text-decoration: none;
 }
 
 #navs ul li a:hover {
-  color: #f4f1de;
-  text-decoration: underline #c83e19;
+  color: var(--light-yellow);
+  text-decoration: underline var(--red-panda);
 }
 
 #cont {
@@ -58,8 +62,6 @@ body {
 
 #flags {
   margin: auto 0;
-  /*     padding: 10;
- */
   display: flex;
   gap: 20px;
   flex-direction: row;
@@ -76,8 +78,6 @@ header {
   position: fixed;
   height: 80px;
   width: 100%;
-  /* 	overflow: hidden;
- */
   top: 0;
   left: 0;
   z-index: 1;
@@ -92,7 +92,7 @@ header {
 
 .progress-bar {
   height: 8px;
-  background: #c83e19;
+  background: var(--red-panda);
   width: 0%;
 }
 
@@ -115,12 +115,6 @@ header {
   font-weight: bolder;
 }
 
-#me {
-  /*   padding: 0;
- */
-  /*  margin: 20px;
- */
-}
 
 #me img {
   --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
@@ -131,15 +125,11 @@ header {
     right var(--_i, 0%) bottom var(--_g);
   -webkit-mask: var(--m);
   mask: var(--m);
-  /*   outline: 150vmax solid #c83e19;
- */
-  /* border-radius: 100px; */
   outline-offset: -200vmax;
   transition: .3s linear;
   cursor: pointer;
   margin: 10px;
-  /*   height: ;
- */
+ 
 }
 
 #me img:hover {
@@ -152,15 +142,15 @@ header {
   font-size: 2rem;
   line-height: 7rem;
   text-decoration: none;
-  background-color: #393d3f;
-  color: #f4f1de;
+  background-color: var(--dark-grey);
+  color:var(--light-yellow);
   padding: 10px 40px;
   border-radius: 8px;
   transition-duration: 0.4s;
 }
 
 #button:hover {
-  background-color: #c83e19;
+  background-color: var(--red-panda);
 }
 
 .icon {
@@ -174,7 +164,7 @@ header {
 }
 
 .about h2 {
-  color: #393d3f;
+  color: var(--dark-grey);
 }
 
 .about p {
@@ -182,12 +172,12 @@ header {
   font-style: italic;
   font-weight: 400;
   font-size: 5.6rem;
-  color: #393d3f;
+  color: var(--dark-grey);
   margin-bottom: 80px;
 }
 
 .skills {
-  background-color: #393d3f;
+  background-color: var(--dark-grey);
   padding: 20px 0 20px 0;
   border-radius: 40px;
 }
@@ -198,11 +188,9 @@ header {
   width: 300px;
   height: 300px;
   border-radius: 30px;
-  /*   opacity: 0.5;
- */
   margin: 30px 0;
   transition-duration: 0.4s;
-  /*  */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -226,7 +214,7 @@ header {
 
 
 .square:hover {
-  background-color: #c83e19;
+  background-color: var(--red-panda);
 }
 
 p {
@@ -234,11 +222,11 @@ p {
   font-style: italic;
   font-weight: 400;
   font-size: 5.6rem;
-  color: #f4f1de;
+  color: var(--light-yellow);
 }
 
 .certificates {
-  background-color: #393d3f;
+  background-color: var(--dark-grey);
   padding: 20px 50px;
   border-radius: 40px;
 
@@ -252,7 +240,7 @@ p {
   list-style: none;
   font-family: "Poppins", sans-serif;
   font-size: 3.5rem;
-  color: #393d3f;
+  color: var(--dark-grey);
   width: 1000px;
   display: inline;
 
@@ -269,6 +257,11 @@ p {
 
 }
 
+.container-fuid.box{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
 #contact {
   position: absolute;
   left: 0;
@@ -276,10 +269,8 @@ p {
 }
 
 #contact .table {
-  background-color: #393d3f;
+  background-color: var(--dark-grey);
   padding: 20px 0 40px 0;
-  /*   border-radius: 40px;
- */
 }
 
 #contact img {
@@ -297,7 +288,7 @@ img.icons {
 
 
 div.containers {
-  background-color: #f4f1de;
+  background-color: var(--light-yellow);
   text-align: center;
   padding: 0;
   margin: 0;
@@ -312,20 +303,13 @@ div.containers p {
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  /*   background-color: transparent;
- */
   width: 350px;
   height: 350px;
-  /*   border: 1px solid #f1f1f1;
- perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  /* box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-/* border-radius: 20px; */
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-  /*   position: relative;
- */
+
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
@@ -342,6 +326,8 @@ div.containers p {
 .flip-card-front,
 .flip-card-back {
   position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -354,15 +340,14 @@ div.containers p {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #393d3f;
-  color: black;
+  background-color: var(--dark-grey);
   border-radius: 20px;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #c83e19;
-  color: white;
+  background-color: var(--red-panda);
+  color: var(--light-yellow);
   transform: rotateY(180deg);
   border-radius: 20px;
 
@@ -373,3 +358,19 @@ div.containers p {
 .row {
   margin-top: 40px;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
