@@ -1,0 +1,18 @@
+.carousel-inner img {
+    padding: 0 0 100px 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    left: -25px;
+    /*     background-color: red;
+
+ */
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    right: -25px;
+}

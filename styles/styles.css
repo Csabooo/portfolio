@@ -1,0 +1,375 @@
+body {
+  max-width: 1920px;
+  margin: 80px auto 0 auto;
+  background-color: #f4f1de;
+}
+
+.navok {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #393d3f;
+  /*   border-radius: 15px 15px 0 0;
+ */
+  padding: 0 20%;
+}
+
+#logo {
+  width: 25%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#navs {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+#navs ul {
+  display: flex;
+  margin: auto 0;
+  padding: 0;
+  color: #f4f1de;
+  list-style: none;
+  flex-direction: row;
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.625rem;
+}
+
+#navs ul li a {
+  color: #f4f1de;
+  text-decoration: none;
+}
+
+#navs ul li a:hover {
+  color: #f4f1de;
+  text-decoration: underline #c83e19;
+}
+
+#cont {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+#flags {
+  margin: auto 0;
+  /*     padding: 10;
+ */
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-items: flex-end;
+  align-content: center;
+}
+
+#flags li {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  /* 	overflow: hidden;
+ */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/*----------------------------------*/
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #c83e19;
+  width: 0%;
+}
+
+/*----------------------------------*/
+
+
+
+
+.title h1 {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  line-height: 7rem;
+}
+
+.title h2 {
+  padding-top: 4rem;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#me {
+  /*   padding: 0;
+ */
+  /*  margin: 20px;
+ */
+}
+
+#me img {
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left var(--_i, 0%) top var(--_g),
+    bottom var(--_i, 0%) left var(--_g),
+    top var(--_i, 5%) right var(--_g),
+    right var(--_i, 0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  /*   outline: 150vmax solid #c83e19;
+ */
+  /* border-radius: 100px; */
+  outline-offset: -200vmax;
+  transition: .3s linear;
+  cursor: pointer;
+  margin: 10px;
+  /*   height: ;
+ */
+}
+
+#me img:hover {
+  --_i: 10%;
+  outline-color: #0000;
+}
+
+#button {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  line-height: 7rem;
+  text-decoration: none;
+  background-color: #393d3f;
+  color: #f4f1de;
+  padding: 10px 40px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+#button:hover {
+  background-color: #c83e19;
+}
+
+.icon {
+  width: 8%;
+  padding: 20px 30px 10px 0;
+}
+
+.about {
+  margin: 200px 0;
+
+}
+
+.about h2 {
+  color: #393d3f;
+}
+
+.about p {
+  font-family: lora;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 5.6rem;
+  color: #393d3f;
+  margin-bottom: 80px;
+}
+
+.skills {
+  background-color: #393d3f;
+  padding: 20px 0 20px 0;
+  border-radius: 40px;
+}
+
+.square {
+  box-sizing: border-box;
+  background-color: rgb(112, 112, 112, 0.5);
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  /*   opacity: 0.5;
+ */
+  margin: 30px 0;
+  transition-duration: 0.4s;
+  /*  */
+}
+
+
+.square p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.portfolio {
+  margin: 100px auto;
+}
+
+.portfolio img {
+  padding: 10px;
+  width: 508px;
+  height: auto;
+  border-radius: 40px;
+}
+
+
+.square:hover {
+  background-color: #c83e19;
+}
+
+p {
+  font-family: lora;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 5.6rem;
+  color: #f4f1de;
+}
+
+.certificates {
+  background-color: #393d3f;
+  padding: 20px 50px;
+  border-radius: 40px;
+
+}
+
+
+#why_list {
+  padding: 20px 0 20px 70px;
+  box-sizing: content-box;
+  text-align: left;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  color: #393d3f;
+  width: 1000px;
+  display: inline;
+
+}
+
+#why_list img {
+  width: 10%;
+  margin: 20px 20px;
+
+}
+
+#me {
+  width: 626px;
+
+}
+
+#contact {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+#contact .table {
+  background-color: #393d3f;
+  padding: 20px 0 40px 0;
+  /*   border-radius: 40px;
+ */
+}
+
+#contact img {
+  box-sizing: content-box;
+  height: 150px;
+  padding: 20px;
+}
+
+img.icons {
+  max-width: max-content;
+
+  padding-right: 20px;
+}
+
+
+
+div.containers {
+  background-color: #f4f1de;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+div.containers p {
+  margin: 0;
+}
+
+
+/*--------------FLIP CARD------------------*/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  /*   background-color: transparent;
+ */
+  width: 350px;
+  height: 350px;
+  /*   border: 1px solid #f1f1f1;
+ perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  /* box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* border-radius: 20px; */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  /*   position: relative;
+ */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #393d3f;
+  color: black;
+  border-radius: 20px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #c83e19;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+
+}
+
+/*--------------FLIP CARD------------------*/
+
+.row {
+  margin-top: 40px;
+}
