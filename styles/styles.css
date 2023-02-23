@@ -4,12 +4,44 @@
   --red-panda: #c83e19;
 }
 
+.about {
+  margin: 20% 0;
+  text-align: center;
+}
+
+.about p {
+  font-family: lora;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--dark-grey);
+  margin-bottom: 3rem;
+
+}
+
 body {
- 
-max-width: 1900px;
- margin: 0 auto;
-  background-color: var(--light-yellow);
   font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+#button {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  background-color: var(--dark-grey);
+  color: var(--light-yellow);
+  padding: 5% 7%;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  font-size: 1.5rem;
+}
+
+#button:hover {
+  background-color: var(--red-panda);
+}
+
+#container {
+  background-color: var(--light-yellow);
+
 }
 
 .collapse {
@@ -19,60 +51,23 @@ max-width: 1900px;
   padding: 0;
 }
 
-#logo {
-  padding: 1rem;
-}
-
-
-.nav-link {
-  color: var(--light-yellow);
-  font-size: 1.5rem;
-  margin: 0 2rem;
-
-}
-
-.nav-link:hover {
+em {
+  font-family: lora;
+  font-style: italic;
+  font-size: 3rem;
   color: var(--red-panda);
-  font-size: 1.5rem;
 }
 
-.navbar {
-  padding: 0;
-  position: sticky;
-  top: 0;
-  background-color: var(--dark-grey);
-  color: var(--light-yellow);
-}
-
- 
-button.navbar-toggler{
-  margin-right: 1.5rem;
-}
-.navbar-toggler{
-  border-color: var(--light-yellow);
-}
-
-.navbar-toggler-icon{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28244, 241, 222,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
- 
-}
-
-#navs {
+#follow {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  flex-direction: row;
 
 }
 
-
-#navs ul li a {
-  color: var(--light-yellow);
-  text-decoration: none;
-}
-
-#navs ul li a:hover {
-  color: var(--light-yellow);
-  text-decoration: underline var(--red-panda);
+#follow img {
+  display: inline;
+  height: 120px;
+  padding: 25%;
 }
 
 
@@ -99,6 +94,117 @@ header {
   z-index: 1;
 }
 
+html {
+  display: flex;
+  background-color: var(--light-yellow);
+  color: var(--dark-grey);
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 10% 0 1% 0;
+}
+
+#contactme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7rem;
+  width: 90%;
+  align-items: center;
+  margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+#logo {
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: var(--light-yellow);
+  font-size: 1.5rem;
+  margin: 0 2rem;
+
+}
+
+.nav-link:hover {
+  color: var(--red-panda);
+  font-size: 1.5rem;
+}
+
+.navbar {
+  font-size: 0.5rem;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--dark-grey);
+  color: var(--light-yellow);
+}
+
+
+button.navbar-toggler {
+  margin-right: 1.5rem;
+}
+
+.navbar-toggler {
+  border-color: var(--light-yellow);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28244, 241, 222,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+#navs {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+
+#navs ul li a {
+  color: var(--light-yellow);
+  text-decoration: none;
+}
+
+#navs ul li a:hover {
+  color: var(--light-yellow);
+  text-decoration: underline var(--red-panda);
+}
+
+#normal {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  text-align: justify;
+  font-size: 1.7rem;
+  padding: 0.1% 8%;
+}
+
+
+
 /*----------------------------------*/
 .progress-container {
   width: 100%;
@@ -114,27 +220,7 @@ header {
   width: 0%;
 }
 
-/*----------------------------------*/
-
-
-
-
-.title h1 {
-  display: inline-block;
-  font-family: "Poppins", sans-serif;
-  font-size: 4rem;
-  line-height: 7rem;
-}
-
-.title h2 {
-  padding-top: 4rem;
-  display: inline-block;
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-}
-
-
-#me img {
+#me {
   --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
   --m:
     left var(--_i, 0%) top var(--_g),
@@ -146,53 +232,24 @@ header {
   outline-offset: -200vmax;
   transition: .3s linear;
   cursor: pointer;
-  margin: 10px;
-
+  /* padding-top: 1%; */
+  padding-bottom: 10%;
+  width: 90%;
 }
 
-#me img:hover {
+#me:hover {
   --_i: 10%;
   outline-color: #0000;
 }
 
-#button {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  line-height: 7rem;
-  text-decoration: none;
-  background-color: var(--dark-grey);
-  color: var(--light-yellow);
-  padding: 10px 40px;
-  border-radius: 8px;
-  transition-duration: 0.4s;
-}
 
-#button:hover {
-  background-color: var(--red-panda);
-}
 
-.icon {
-  width: 8%;
-  padding: 20px 30px 10px 0;
-}
+/* .icon {
+  width: 35%;
+  padding: 10%;
+} */
 
-.about {
-  margin: 200px 0;
 
-}
-
-.about h2 {
-  color: var(--dark-grey);
-}
-
-.about p {
-  font-family: lora;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 5.6rem;
-  color: var(--dark-grey);
-  margin-bottom: 80px;
-}
 
 .skills {
   background-color: var(--dark-grey);
@@ -203,8 +260,8 @@ header {
 .square {
   box-sizing: border-box;
   background-color: rgb(112, 112, 112, 0.5);
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 30px;
   margin: 30px 0;
   transition-duration: 0.4s;
@@ -214,7 +271,7 @@ header {
 .square p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 95%;
   margin: 0;
 }
 
@@ -238,7 +295,7 @@ p {
   font-family: lora;
   font-style: italic;
   font-weight: 400;
-  font-size: 5.6rem;
+  font-size: 0.5rem;
   color: var(--light-yellow);
 }
 
@@ -268,7 +325,7 @@ p {
 }
 
 #me {
-  width: 626px;
+  /* width: 626px; */
 }
 
 .container-fuid.box {
@@ -287,17 +344,17 @@ p {
 }
 
 #contact img {
-  box-sizing: content-box;
+  display: block;
+  width: 90%;
+  /*  box-sizing: content-box;
   height: 150px;
-  padding: 20px;
+  padding: 20px; */
 }
 
 img.icons {
   max-width: max-content;
   padding-right: 20px;
 }
-
-
 
 div.containers {
   background-color: var(--light-yellow);
@@ -367,9 +424,6 @@ div.containers p {
 
 /*--------------FLIP CARD------------------*/
 
-.row {
-  margin-top: 40px;
-}
 
 
 /* Extra small devices (phones, 600px and down) */
