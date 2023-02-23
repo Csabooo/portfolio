@@ -44,6 +44,7 @@ body {
 
 }
 
+
 .collapse {
   display: flex;
   align-content: center;
@@ -203,23 +204,6 @@ button.navbar-toggler {
   padding: 0.1% 8%;
 }
 
-
-
-/*----------------------------------*/
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-  position: fixed;
-
-}
-
-.progress-bar {
-  height: 8px;
-  background: var(--red-panda);
-  width: 0%;
-}
-
 #me {
   --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
   --m:
@@ -242,19 +226,49 @@ button.navbar-toggler {
   outline-color: #0000;
 }
 
+p {
+  font-family: lora;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.5rem;
+  color: var(--light-yellow);
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  position: fixed;
+
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--red-panda);
+  width: 0%;
+}
 
 
-/* .icon {
-  width: 35%;
-  padding: 10%;
-} */
 
+.portfolio {
+  margin: 100px auto;
+}
 
+.portfolio img {
+  padding: 10px;
+  width: 508px;
+  height: auto;
+  border-radius: 40px;
+}
 
 .skills {
   background-color: var(--dark-grey);
-  padding: 20px 0 20px 0;
+  padding: 15% 0 15% 0;
   border-radius: 40px;
+}
+
+#skills {
+  font-size: 4rem;
 }
 
 .square {
@@ -268,36 +282,26 @@ button.navbar-toggler {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.square img {
+  width: 100%;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto
+}
+
 .square p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 95%;
+  font-size: 1.5rem;
   margin: 0;
 }
-
-.portfolio {
-  margin: 100px auto;
-}
-
-.portfolio img {
-  padding: 10px;
-  width: 508px;
-  height: auto;
-  border-radius: 40px;
-}
-
 
 .square:hover {
   background-color: var(--red-panda);
 }
 
-p {
-  font-family: lora;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.5rem;
-  color: var(--light-yellow);
-}
+
+
 
 .certificates {
   background-color: var(--dark-grey);
@@ -423,6 +427,81 @@ div.containers p {
 }
 
 /*--------------FLIP CARD------------------*/
+
+
+
+
+
+/*--------------SKILLBAR------------------*/
+
+/* Make sure that padding behaves as expected */
+* {
+  box-sizing: border-box
+}
+
+/* Container for skill bars */
+.container-skill {
+  width: 100%;
+  /* Full width */
+  background-color: var(--dark-grey);
+  /* Grey background */
+  color: var(--light-yellow);
+  padding: 0 7%;
+}
+
+.skill-bar {
+  padding: 10% 0 10% 0;
+}
+
+.skill-bar p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  /* padding: 2% 5%; */
+
+}
+
+
+.skill-line {
+  text-align: right;
+  /* Right-align text */
+  padding-top: 10px;
+  /* Add top padding */
+  padding-bottom: 10px;
+  /* Add bottom padding */
+  color: var(--light-yellow);
+  /* White text color */
+}
+
+.html {
+  width: 90%;
+  background-color: #04AA6D;
+}
+
+/* Green */
+.css {
+  width: 80%;
+  background-color: #2196F3;
+}
+
+/* Blue */
+.bs {
+  width: 65%;
+  background-color: #f44336;
+}
+
+/* Red */
+.js {
+  width: 40%;
+  background-color: #808080;
+}
+
+/* Dark Grey */
+
+
+/*--------------SKILLBAR------------------*/
+
+
 
 
 
