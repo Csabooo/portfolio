@@ -4,6 +4,9 @@
   --red-panda: #c83e19;
 }
 
+*{
+  box-sizing: border-box;
+}
 .about {
   margin: 20% 0;
   text-align: center;
@@ -15,13 +18,13 @@
   font-weight: 400;
   font-size: 4rem;
   color: var(--dark-grey);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 #button {
@@ -39,9 +42,50 @@ body {
   background-color: var(--red-panda);
 }
 
+.certificates {
+  background-color: var(--dark-grey);
+  padding: 20px 50px;
+  border-radius: 40px;
+}
+
+.container-fuid.box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#contact {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+#contact .table {
+  background-color: var(--dark-grey);
+  padding: 20px 0 40px 0;
+}
+
+#contact img {
+  display: block;
+  width: 90%;
+  /*  box-sizing: content-box;
+  height: 150px;
+  padding: 20px; */
+}
+
 #container {
   background-color: var(--light-yellow);
 
+}
+
+#contactme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7rem;
+  width: 90%;
+  align-items: center;
+  margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -86,26 +130,53 @@ em {
   list-style: none;
 }
 
-header {
-  position: fixed;
-  height: 80px;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-html {
-  display: flex;
-  background-color: var(--light-yellow);
-  color: var(--dark-grey);
-  font-family: "Poppins", sans-serif;
-  justify-content: center;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  align-items: center;
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  cursor: pointer;
 }
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: var(--dark-grey);
+  border-radius: 20px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--red-panda);
+  color: var(--light-yellow);
+  transform: rotateY(180deg);
+  border-radius: 20px;
+
+}
+
+/*--------------FLIP CARD------------------*/
 
 h1 {
   font-size: 2rem;
@@ -117,20 +188,27 @@ h2 {
   padding: 10% 0 1% 0;
 }
 
-#contactme {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 7rem;
-  width: 90%;
-  align-items: center;
-  margin-top: 30%;
-  margin-left: auto;
-  margin-right: auto;
+
+header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-
-
+html {
+  box-sizing: border-box;
+  display: flex;
+  background-color: var(--light-yellow);
+  color: var(--dark-grey);
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
 
 #logo {
   padding: 1rem;
@@ -201,7 +279,17 @@ button.navbar-toggler {
   font-style: normal;
   text-align: justify;
   font-size: 1.7rem;
-  padding: 0.1% 8%;
+  padding: 0.1% 4%;
+}
+
+#normal-portfolio {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 8% 4%;
+  margin: 0;
 }
 
 #me {
@@ -282,6 +370,12 @@ p {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.square:hover {
+  background-color: var(--red-panda);
+  cursor: pointer;
+}
+
+
 .square img {
   width: 100%;
   max-width: 50%;
@@ -296,27 +390,14 @@ p {
   margin: 0;
 }
 
-.square:hover {
-  background-color: var(--red-panda);
-}
-
-
-
-
-.certificates {
-  background-color: var(--dark-grey);
-  padding: 20px 50px;
-  border-radius: 40px;
-}
-
 
 #why_list {
-  padding: 20px 0 20px 70px;
-  box-sizing: content-box;
+  padding: 5% 0 5% 0;
+  /* box-sizing: content-box; */
   text-align: left;
   list-style: none;
   font-family: "Poppins", sans-serif;
-  font-size: 3.5rem;
+  font-size: 1.3rem;
   color: var(--dark-grey);
   width: 1000px;
   display: inline;
@@ -328,32 +409,8 @@ p {
   margin: 20px 20px;
 }
 
-#me {
-  /* width: 626px; */
-}
 
-.container-fuid.box {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 
-#contact {
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-
-#contact .table {
-  background-color: var(--dark-grey);
-  padding: 20px 0 40px 0;
-}
-
-#contact img {
-  display: block;
-  width: 90%;
-  /*  box-sizing: content-box;
-  height: 150px;
-  padding: 20px; */
-}
 
 img.icons {
   max-width: max-content;
@@ -376,57 +433,12 @@ div.containers p {
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
+  padding: 5%;
   width: 350px;
   height: 350px;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
 
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: var(--dark-grey);
-  border-radius: 20px;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: var(--red-panda);
-  color: var(--light-yellow);
-  transform: rotateY(180deg);
-  border-radius: 20px;
-
-}
-
-/*--------------FLIP CARD------------------*/
 
 
 
@@ -477,20 +489,20 @@ div.containers p {
   width: 90%;
   background-color: #04AA6D;
 }
-
 /* Green */
+
 .css {
   width: 80%;
   background-color: #2196F3;
 }
-
 /* Blue */
+
 .bs {
   width: 65%;
   background-color: #f44336;
 }
-
 /* Red */
+
 .js {
   width: 40%;
   background-color: #808080;
