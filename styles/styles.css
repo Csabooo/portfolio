@@ -4,9 +4,10 @@
   --red-panda: #c83e19;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
+
 .about {
   margin: 20% 0;
   text-align: center;
@@ -130,9 +131,18 @@ em {
   list-style: none;
 }
 
+
+/*--------------FLIP CARD------------------*/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  padding: 5%;
+  width: 350px;
+  height: 350px;
+}
+
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
@@ -143,7 +153,7 @@ em {
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* Position the front and back side */
@@ -165,6 +175,12 @@ em {
 .flip-card-front {
   background-color: var(--dark-grey);
   border-radius: 20px;
+  
+}
+
+.flip-card-front img{
+  width: 90%;
+  height: 90%;
 }
 
 /* Style the back side */
@@ -173,8 +189,21 @@ em {
   color: var(--light-yellow);
   transform: rotateY(180deg);
   border-radius: 20px;
-
 }
+
+.flip-card-back-follow p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: var(--light-yellow);
+}
+
+.flip-card-back-follow a img {
+  height: 40%;
+  width: max-content;
+  color: var(--dark-grey);
+}
+
 
 /*--------------FLIP CARD------------------*/
 
@@ -221,6 +250,19 @@ main {
   width: 375px;
   margin: 0 auto;
 }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL'0,
+    'wght'400,
+    'GRAD'0,
+    'opsz'48;
+  color: var(--light-yellow);
+  font-size: 7rem;
+  vertical-align: middle;
+}
+
 
 .nav-link {
   color: var(--light-yellow);
@@ -409,9 +451,6 @@ p {
   margin: 20px 20px;
 }
 
-
-
-
 img.icons {
   max-width: max-content;
   padding-right: 20px;
@@ -427,22 +466,6 @@ div.containers {
 div.containers p {
   margin: 0;
 }
-
-
-/*--------------FLIP CARD------------------*/
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  padding: 5%;
-  width: 350px;
-  height: 350px;
-}
-
-
-
-
-
-
 
 /*--------------SKILLBAR------------------*/
 
@@ -462,15 +485,17 @@ div.containers p {
 }
 
 .skill-bar {
-  padding: 10% 0 10% 0;
+  padding: 5% 0 5% 0;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .skill-bar p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 1.5rem;
-  /* padding: 2% 5%; */
-
+  padding: 1% 0;
+  margin: 4% 0;
 }
 
 
@@ -489,18 +514,21 @@ div.containers p {
   width: 90%;
   background-color: #04AA6D;
 }
+
 /* Green */
 
 .css {
   width: 80%;
   background-color: #2196F3;
 }
+
 /* Blue */
 
 .bs {
   width: 65%;
   background-color: #f44336;
 }
+
 /* Red */
 
 .js {
