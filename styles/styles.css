@@ -27,11 +27,13 @@ a {
   font-size: 3rem;
   color: var(--dark-grey);
   margin-bottom: 2rem;
-  }
- 
-.address,
-.address-dark {
-  font-size: 3rem;
+}
+
+p.address,
+p.address-dark {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 #button {
@@ -123,7 +125,7 @@ a {
 em {
   font-family: lora;
   font-style: italic;
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: var(--red-panda);
 }
 
@@ -265,8 +267,9 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-/*   margin-top: 80px;
- */}
+  /*   margin-top: 80px;
+ */
+}
 
 html {
   box-sizing: border-box;
@@ -318,9 +321,10 @@ main {
 }
 
 .navbar {
-  
-/*   position: fixed;
- */  font-size: 0.5rem;
+
+  /*   position: fixed;
+ */
+  font-size: 0.5rem;
   padding: 0;
   background-color: var(--dark-grey);
   color: var(--light-yellow);
@@ -364,6 +368,7 @@ button.navbar-toggler {
   text-align: justify;
   font-size: 1.7rem;
   padding: 0.1% 4%;
+  text-indent: 3rem;
 }
 
 #normal-portfolio {
@@ -371,9 +376,9 @@ button.navbar-toggler {
   font-style: normal;
   font-weight: 700;
   text-align: center;
-  font-size: 1.7rem;
-  padding: 8% 4%;
-  margin: 0;
+  font-size: 2.8em;
+  padding: 8% 0 0 0;
+  color: var(--red-panda);
 }
 
 #me {
@@ -381,14 +386,13 @@ button.navbar-toggler {
   --m:
     left var(--_i, 0%) top var(--_g),
     bottom var(--_i, 0%) left var(--_g),
-    top var(--_i, 5%) right var(--_g),
+    top var(--_i, 0%) right var(--_g),
     right var(--_i, 0%) bottom var(--_g);
   -webkit-mask: var(--m);
   mask: var(--m);
   outline-offset: -200vmax;
   transition: .3s linear;
   cursor: pointer;
-  /* padding-top: 1%; */
   padding-bottom: 10%;
   width: 90%;
 }
@@ -442,8 +446,9 @@ p {
 
 #skills {
   font-size: 4rem;
-/*   padding-top: 70px;
- */}
+  /*   padding-top: 70px;
+ */
+}
 
 .square {
   box-sizing: border-box;
@@ -480,19 +485,16 @@ p {
 
 
 .table {
-  /*   background-color: var(--dark-grey);
-   */
   padding: 10% 0 10% 0;
 }
 
 
 #why_list {
   padding: 5% 0 5% 0;
-  /* box-sizing: content-box; */
   text-align: left;
   list-style: none;
   font-family: "Poppins", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: var(--dark-grey);
   width: 1000px;
   display: inline;
