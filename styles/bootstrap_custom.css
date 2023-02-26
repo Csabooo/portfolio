@@ -1,4 +1,4 @@
-.carousel-inner img {
+/* .carousel-inner img {
     padding: 0 0 100px 0;
     max-width: 90%;
     margin: 0 auto;
@@ -7,9 +7,6 @@
 .carousel-control-prev-icon {
     position: absolute;
     left: -25px;
-    /*     background-color: red;
-
- */
 }
 
 .carousel-control-next-icon {
@@ -17,3 +14,31 @@
     right: -25px;
 }
 
+ */
+
+ .carousel-control-prev-icon {
+    position: absolute;
+    top: 65px;
+    left: -25px;
+  }
+  
+  .carousel-control-next-icon {
+    position: absolute;
+    top: 65px;
+    right: -25px;
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+  }
