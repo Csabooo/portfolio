@@ -256,7 +256,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 1.8rem;
-  padding: 10% 0 1% 0;
+  padding: 5% 0 1% 0;
 }
 
 
@@ -321,14 +321,11 @@ main {
 }
 
 .navbar {
-
-  /*   position: fixed;
- */
   font-size: 0.5rem;
   padding: 0;
   background-color: var(--dark-grey);
   color: var(--light-yellow);
-  top
+  
 }
 
 
