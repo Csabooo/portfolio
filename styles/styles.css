@@ -100,7 +100,7 @@ p.address-dark {
   margin-top: 7rem;
   width: 90%;
   align-items: center;
-  margin-top: 30%;
+  margin-top: 25%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -249,14 +249,14 @@ footer img:not(.icons) {
 
 h1 {
   font-family: "Poppins", sans-serif;
-  padding-top: 4%;
+  padding-top: 3%;
   font-size: 2.2rem;
 }
 
 h2 {
   text-align: center;
   font-size: 1.8rem;
-  padding: 5% 0 1% 0;
+  padding: 3% 0 1% 0;
 }
 
 
@@ -390,7 +390,7 @@ button.navbar-toggler {
   outline-offset: -200vmax;
   transition: .3s linear;
   cursor: pointer;
-  padding-bottom: 10%;
+  padding-bottom: 6%;
   width: 90%;
 }
 
