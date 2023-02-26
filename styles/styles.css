@@ -36,6 +36,10 @@ p.address-dark {
   letter-spacing: 2px;
 }
 
+body {
+  background-color: var(--light-yellow);
+}
+
 #button {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
@@ -114,21 +118,16 @@ em {
   padding: 15%;
 }
 
-footer {
+#contact {
+  background-color: var(--dark-grey);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
-  /* width: 300px; */
-  width: 82%;
-  height: auto;
+  padding: 8% 0 8% 0;
+  border-radius: 40px;
 }
 
-footer h1{
-  margin: 10% 0;
-}
-
-footer img:not(.icons) {
+#contact img:not(.icons) {
   display: inline-block;
   width: 90%;
   margin: 0 auto;
@@ -149,6 +148,10 @@ footer img:not(.icons) {
   list-style: none;
 }
 
+
+footer h1 {
+  margin: 15% 0;
+}
 
 /*--------------FLIP CARD------------------*/
 
@@ -577,16 +580,14 @@ div.containers p {
 
 
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  ...
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
 
   .certificates {
+    margin: 0 5%;
+  }
+
+  #contact {
     margin: 0 5%;
   }
 
@@ -595,11 +596,6 @@ div.containers p {
     padding: 5% 0;
     width: 420px;
     height: 420px;
-  }
-
-  footer {
-    width: 85%;
-    height: auto;
   }
 
   html {
@@ -628,14 +624,13 @@ div.containers p {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  ...
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  ...
+  html {
+    font-size: 0.5rem;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
