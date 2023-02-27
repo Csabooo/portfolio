@@ -72,6 +72,11 @@ body {
   background-color: var(--light-yellow);
 }
 
+/* .container-fluid{
+  padding: 0;
+  margin: 0;
+} */
+
 #contactme {
   display: flex;
   flex-direction: column;
@@ -127,18 +132,22 @@ em {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8% 0 8% 0;
-  border-radius: 40px;
+  align-items: center;
+  padding: 10% 0;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0;
 }
 
 #contact img:not(.icons) {
   display: inline-block;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  padding: 2% 0;
+  padding: 5% 1%;
 }
 
-em{
+em {
   font-weight: 600;
 }
 
@@ -158,7 +167,7 @@ em{
 
 
 footer h1 {
-  margin: 15% 0;
+  margin: 7% 0;
 }
 
 /*--------------FLIP CARD------------------*/
@@ -274,6 +283,7 @@ html {
   box-sizing: border-box;
   margin: 0 auto;
   font-size: 0.6rem;
+  padding: 0;
 }
 
 #iam p {
@@ -608,7 +618,7 @@ div.containers p {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
 
- 
+
   .certificates {
     margin: 0;
   }
@@ -669,14 +679,18 @@ div.containers p {
 
   .certificates {
     padding: 5% 5%;
-}
+  }
 
-#contact {
-   margin: 0 1%;
-  padding: 8% 15% 8% 15%;
-  
-}
 
+  #contact {
+    padding: 2% 0;
+  }
+
+
+  #contact img:not(.icons) {
+    width: 20%;
+    padding: 2% 1%;
+  }
 
   #contactme {
     margin-top: 10%;
@@ -690,13 +704,9 @@ div.containers p {
 
   }
 
-
-
-  em {
-    font-size: 4rem;
-    
-  }
-
+  footer h1 {
+    margin:3% 0;
+}
   h1 {
     font-size: 3.5rem;
     text-align: left;
@@ -728,7 +738,7 @@ div.containers p {
     padding: 5% 0;
     width: 320px;
     height: 320px;
-}
+  }
 
   #follow {
     justify-content: start;
@@ -761,15 +771,15 @@ div.containers p {
 
 
   .skill-bar p {
-        font-size: 2.5rem;
-    padding: 1% 0;
-    margin: 4% 0;
-}
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+  }
 
-.skill-line {
-   font-size: 1.2rem; 
+  .skill-line {
+    font-size: 1.2rem;
 
-}
+  }
 
   .square {
     box-sizing: content-box;
@@ -781,7 +791,7 @@ div.containers p {
 
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+  /* @media only screen and (min-width: 1200px) {
     #contact {
       margin: 0;
      padding: 8% 15% 8% 15%;
@@ -789,4 +799,4 @@ div.containers p {
    }
    
 
-  }}
+  }} */
