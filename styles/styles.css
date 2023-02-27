@@ -610,11 +610,7 @@ div.containers p {
 
  
   .certificates {
-    margin: 0 5%;
-  }
-
-  #contact {
-    margin: 0 5%;
+    margin: 0;
   }
 
   .flip-card {
@@ -672,12 +668,15 @@ div.containers p {
   }
 
   .certificates {
-    margin: 0;
+    padding: 5% 5%;
 }
 
-  #contact {
-    margin: 0;
+#contact {
+   margin: 0 1%;
+  padding: 8% 15% 8% 15%;
+  
 }
+
 
   #contactme {
     margin-top: 10%;
@@ -783,5 +782,11 @@ div.containers p {
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    ...
-  }
+    #contact {
+      margin: 0;
+     padding: 8% 15% 8% 15%;
+     
+   }
+   
+
+  }}
