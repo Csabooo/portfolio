@@ -4,7 +4,6 @@
   --red-panda: #c83e19;
 }
 
-
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -16,7 +15,7 @@ a {
 }
 
 .about {
-  margin: 20% 0;
+  margin: 10% 0;
   text-align: center;
 }
 
@@ -137,6 +136,10 @@ em {
   width: 90%;
   margin: 0 auto;
   padding: 2% 0;
+}
+
+em{
+  font-weight: 600;
 }
 
 #flags {
@@ -362,6 +365,9 @@ button.navbar-toggler {
   text-align: justify;
   font-size: 1.7rem;
   padding: 0.1% 4%;
+}
+
+#normal:first-of-type {
   text-indent: 3rem;
 }
 
@@ -389,6 +395,8 @@ button.navbar-toggler {
   cursor: pointer;
   padding-bottom: 6%;
   width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 #me:hover {
@@ -547,7 +555,7 @@ div.containers p {
 
 
 .skill-line {
-  text-align: right;
+  text-align: center;
   /* Right-align text */
   padding-top: 10px;
   /* Add top padding */
@@ -555,6 +563,7 @@ div.containers p {
   /* Add bottom padding */
   color: var(--light-yellow);
   /* White text color */
+  font-size: 1rem;
 }
 
 .html {
@@ -599,6 +608,7 @@ div.containers p {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
 
+ 
   .certificates {
     margin: 0 5%;
   }
@@ -619,16 +629,13 @@ div.containers p {
     font-size: 1rem;
   }
 
-  main {
-    width: 576px;
-  }
-
   #me2 {
     display: inline-block;
     width: 70%;
     height: auto;
     padding-top: 10%;
   }
+
 
   .square {
     width: 220px;
@@ -645,6 +652,9 @@ div.containers p {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+  .about {
+    margin: 8% 0px;
+  }
 
   #available {
     grid-area: number3;
@@ -657,24 +667,39 @@ div.containers p {
 
   #button {
     display: inline-block;
-    margin: 10% 0;
-    padding: 5% 10%;
+    margin: 6% 0;
+    padding: 3% 10%;
   }
+
+  .certificates {
+    margin: 0;
+}
+
+  #contact {
+    margin: 0;
+}
 
   #contactme {
     margin-top: 10%;
     display: grid;
-    grid-template-columns: 65% auto;
+    grid-template-columns: 65% 35%;
     grid-template-rows: auto;
     grid-template-areas:
       "number1 number2"
       "number3 number2";
     justify-content: space-between;
-    gap: 0;
+
+  }
+
+
+
+  em {
+    font-size: 4rem;
+    
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -699,24 +724,62 @@ div.containers p {
     display: none;
   }
 
+  .flip-card {
+    box-sizing: border-box;
+    padding: 5% 0;
+    width: 320px;
+    height: 320px;
+}
+
   #follow {
     justify-content: start;
   }
 
-  #follow img{
+  #follow img {
     padding: 15% 15% 0 0;
     height: 60px;
   }
 
   #me {
-    height: 400px;
+    height: 420px;
     width: auto;
     grid-area: number1;
+  }
+
+  #normal {
+    font-size: 2rem;
+    padding: 0.1% 4%;
+    margin: 1rem 0;
   }
 
   #picture {
     grid-area: number2;
   }
+
+  .skills {
+    padding: 3%;
+  }
+
+
+  .skill-bar p {
+        font-size: 2.5rem;
+    padding: 1% 0;
+    margin: 4% 0;
+}
+
+.skill-line {
+   font-size: 1.2rem; 
+
+}
+
+  .square {
+    box-sizing: content-box;
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+  }
+
+
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
