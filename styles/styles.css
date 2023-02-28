@@ -30,13 +30,15 @@ a {
 
 p.address,
 p.address-dark {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 body {
   background-color: var(--light-yellow);
+  margin: 0;
+  padding: 0;
 }
 
 #button {
@@ -48,9 +50,9 @@ body {
   padding: 5% 7%;
   border-radius: 8px;
   transition-duration: 0.4s;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
-  margin: 0 15%;
+  margin: 0 auto;
 }
 
 #button:hover {
@@ -72,10 +74,9 @@ body {
   background-color: var(--light-yellow);
 }
 
-/* .container-fluid{
-  padding: 0;
-  margin: 0;
-} */
+#container-lg{
+margin: 0 auto;
+}
 
 #contactme {
   display: flex;
@@ -134,10 +135,6 @@ em {
   justify-content: center;
   align-items: center;
   padding: 10% 0;
-}
-
-.container-fluid {
-  --bs-gutter-x: 0;
 }
 
 #contact img:not(.icons) {
@@ -276,17 +273,17 @@ header {
 }
 
 html {
-  box-sizing: border-box;
-  display: flex;
+/*   box-sizing: border-box;
+ */  display: flex;
   background-color: var(--light-yellow);
   color: var(--dark-grey);
   font-family: "Poppins", sans-serif;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  margin: 0 auto;
+
   font-size: 0.6rem;
-  padding: 0;
+ 
 }
 
 #iam p {
@@ -295,6 +292,10 @@ html {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 2rem;
+}
+
+li  {
+font-size: 2rem;
 }
 
 #logo {
@@ -371,17 +372,7 @@ button.navbar-toggler {
   text-decoration: underline var(--red-panda);
 }
 
-p.normal {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  text-align: justify;
-  font-size: 2rem;
-  padding: 0.1% 4%;
-}
 
-p.normal#myId {
-  text-indent: 4rem;
-}
 
 #normal-portfolio {
   font-family: "Poppins", sans-serif;
@@ -424,7 +415,17 @@ p {
   color: var(--light-yellow);
 }
 
+p.normal {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  text-align: justify;
+  font-size: 2rem;
+  padding: 0.1% 4%;
+}
 
+p.normal#myId {
+  text-indent: 4rem;
+}
 
 .progress-container {
   width: 100%;
@@ -636,7 +637,7 @@ div.containers p {
 
   #me2 {
     display: inline-block;
-    width: 60%;
+    width: 40%;
     height: auto;
     padding-top: 10%;
   }
@@ -685,6 +686,7 @@ div.containers p {
 
   #contact {
     padding: 2% 0;
+    margin: 0;
   }
 
 
@@ -756,6 +758,11 @@ div.containers p {
     height: 60px;
   }
 
+  li  {
+    font-size: 3rem;
+    }
+
+    
   #me {
     height: 420px;
     width: auto;
