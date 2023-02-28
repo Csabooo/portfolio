@@ -151,13 +151,16 @@ em {
   font-weight: 600;
 }
 
+#flags-row{
+  margin-right: 15%;
+}
+
 #flags {
-  margin: auto 0;
-  gap: 20%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 1.5rem;
+  margin: auto 0;
+  gap: 9%;
 }
 
 
@@ -323,7 +326,6 @@ main {
   color: var(--light-yellow);
   font-size: 1.5rem;
   margin: 0 2rem;
-
 }
 
 .nav-link:hover {
@@ -369,16 +371,16 @@ button.navbar-toggler {
   text-decoration: underline var(--red-panda);
 }
 
-#normal {
+p.normal {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   text-align: justify;
-  font-size: 1.7rem;
+  font-size: 2rem;
   padding: 0.1% 4%;
 }
 
-#normal:first-of-type {
-  text-indent: 3rem;
+p.normal#myId {
+  text-indent: 4rem;
 }
 
 #normal-portfolio {
@@ -421,6 +423,8 @@ p {
   font-size: 0.5rem;
   color: var(--light-yellow);
 }
+
+
 
 .progress-container {
   width: 100%;
@@ -607,12 +611,6 @@ div.containers p {
 
 /*--------------SKILLBAR------------------*/
 
-.carousel-inner img {
-  padding: 0 0 20% 0;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -620,7 +618,8 @@ div.containers p {
 
 
   .certificates {
-    margin: 0;
+    margin: 0 auto;
+    width: 99%;
   }
 
   .flip-card {
@@ -637,7 +636,7 @@ div.containers p {
 
   #me2 {
     display: inline-block;
-    width: 70%;
+    width: 60%;
     height: auto;
     padding-top: 10%;
   }
@@ -679,6 +678,8 @@ div.containers p {
 
   .certificates {
     padding: 5% 5%;
+    width: 72%;
+    margin: 0 auto;
   }
 
 
@@ -704,9 +705,15 @@ div.containers p {
 
   }
 
-  footer h1 {
-    margin:3% 0;
+  em {
+     font-size: 4rem;
+ 
 }
+
+  footer h1 {
+    margin: 3% 0;
+  }
+
   h1 {
     font-size: 3.5rem;
     text-align: left;
@@ -754,11 +761,12 @@ div.containers p {
     width: auto;
     grid-area: number1;
   }
-
-  #normal {
+  
+  .nav-link {
     font-size: 2rem;
-    padding: 0.1% 4%;
-    margin: 1rem 0;
+  }
+  .nav-link:hover {
+    font-size: 2rem;
   }
 
   #picture {
@@ -788,15 +796,7 @@ div.containers p {
     margin: 20px;
   }
 
+}
 
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  /* @media only screen and (min-width: 1200px) {
-    #contact {
-      margin: 0;
-     padding: 8% 15% 8% 15%;
-     
-   }
-   
-
-  }} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
