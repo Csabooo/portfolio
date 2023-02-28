@@ -325,17 +325,16 @@ main {
 
 .nav-link {
   color: var(--light-yellow);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0 2rem;
 }
 
 .nav-link:hover {
   color: var(--red-panda);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .navbar {
-  font-size: 0.5rem;
   padding: 0;
   background-color: var(--dark-grey);
   color: var(--light-yellow);
@@ -770,10 +769,10 @@ div.containers p {
   }
   
   .nav-link {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .nav-link:hover {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #picture {
@@ -806,4 +805,11 @@ div.containers p {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  .nav-link {
+    font-size: 2rem;
+  }
+  .nav-link:hover {
+    font-size: 2rem;
+  }
+}
